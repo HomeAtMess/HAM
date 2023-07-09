@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contact Section</title>
+    </head>
+    <body>
+        <div class="container">
+            <main class="row1">
+                <section class="col1 left">
+                    <div class="contactTitle">
+                        <h2>CONTACT US</h2>
+                    </div>
+                    <div class="contactInfo">
+                        <div class="iconGroup">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="details">
+                                <span>Phone</span>
+                                <span>+91 1234567891</span>
+                            </div>
+                        </div>
+
+                        <div class="iconGroup">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="details">
+                                <span>Email</span>
+                                <span>abc@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="iconGroup">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="details">
+                                <span>Location</span>
+                                <span>X Street, Y Road, San Fransisco</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </section>
+                <section class="col1 right">
+                    <form
+                        class="messageForm"
+                        action="https://formspree.io/f/mzbqgwpk"
+                        method="POST"
+                    >
+                        <div class="inputGroup halfWidth">
+                            <input type="text" name="username" required />
+                            <label>Your Name</label>
+                        </div>
+
+                        <div class="inputGroup halfWidth">
+                            <input type="email" name="email" required />
+                            <label>Email</label>
+                        </div>
+
+                        <div class="inputGroup fullWidth">
+                            <input type="text" name="subject" required />
+                            <label>Subject</label>
+                        </div>
+
+                        <div class="inputGroup fullWidth">
+                            <textarea required name="textarea"></textarea>
+                            <label>Say Something</label>
+                        </div>
+
+                        <div class="inputGroup fullWidth">
+                            <button>Send</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
