@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#2e3b54] w-full ">
+  <div class="flex h-screen justify-center items-center ">
+    <div class="flex flex-col md:flex-row w-9/12 justify-center items-center mt-4 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-lg">
+      <form class="flex justify-center items-baseline flex-col m-4 md:m-24">
+        <label class="m-4">
+          <p class="font-bold">First Name<sup>*</sup></p>
+          <input type="text" name="first" placeholder="Enter your first name" required class="bg-gray-100 rounded-md w-full md:w-[300px] mt-2 h-10 px-2">
+        </label>
+        <label class="m-4">
+          <p class="font-bold">Last Name<sup>*</sup></p>
+          <input type="text" name="last" placeholder="Enter your last name" required class="bg-gray-100 rounded-md w-full md:w-[300px] mt-2 h-10 px-2">
+        </label>
+        <label class="m-4">
+          <p class="font-bold">E-Mail<sup>*</sup></p>
+          <input type="email" name="mail" placeholder="Enter your E-mail address" required class="bg-gray-100 rounded-md w-full md:w-[300px] mt-2 h-10 px-2">
+        </label>
+        <div class="flex flex-col md:flex-row gap-x-2">
+          <label>
+            <p class="font-bold">Create Password<sup>*</sup></p>
+            <input type="password" name="createpassord" placeholder="Enter Your Password" required class="bg-gray-100 rounded-md w-full mt-2 h-10 px-2">
+          </label>
+          <label>
+            <p class="font-bold">Confirm Password<sup>*</sup></p>
+            <input type="password" name="confirmpassord" placeholder="Enter Your Password" required class="bg-gray-100 rounded-md w-full mt-2 h-10 px-2">
+          </label>
+        </div>
+        <button class="mt-5  right-2 flex justify-center items-center rounded-lg bg-[#2e3b54] w-full md:w-[300px] h-10 text-white shadow drop-shadow-lg hover:text-[#2e3b54] hover:bg-white hover:scale-150 transition duration-300">
+          Signup
+        </button>
+      </form>
+      <div class="hidden md:block">
+        <img src="./sign.jpg" class="w-[635px] h-[635px] max-w-none rounded-md">
+      </div>
+    </div>
+  </div>
+  <style>
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .w-[635px] {
+        width: 480px;
+      }
+      .h-[635px] {
+        height: 480px;
+      }
+    }
+  </style>
+</body>
+</html>
