@@ -14,6 +14,9 @@ function visitFile() {
 function visitback() {
     window.location.href = "index.html";
 }
+function signup() {
+    window.location.href = "signup.html";
+}
 // hamb.addEventListener("click", () => {
 //     hamb.classList.toggle("active");
 //     navmenu.classList.toggle("active");
