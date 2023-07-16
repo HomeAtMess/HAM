@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mazzard Soft M";
+}
+:root {
+    --bgOrange: #2e3b54;
+}
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flexcol {
+    flex-direction: column;
+}
+.just-cen {
+    justify-content: center;
+}
+.align-cen {
+    align-items: center;
+}
+.just-sbet {
+    justify-content: space-between;
+}
+.just-sar {
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    height: 117.3px;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 2.5rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover,
+.more a:hover {
+    color: #b5abf9;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #b5abf9;
+}
+.nav-logo img {
+    width: 50%;
+}
+
+/* .nav {
+    padding-top: 1%;
+    margin: 0 50px;
+}
+.logo-container img {
+    width: 50%;
+}
+.items {
+    gap: 20%;
+    padding: 0 64px;
+}
+.items div {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+.nav-link:hover {
+    font-weight: bold;
+    transition: 0.1s;
+    /* border-bottom: 3px solid black; */
+/* } */
+a {
+    text-decoration: none;
+}
+.button1 .btn-pink {
+    background-color: var(--bgOrange);
+    width: 143.01px;
+    height: 48.8px;
+    padding: 0.8rem 2.3rem;
+    top: 10px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid transparent;
+}
+.button1 .btn-pink::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.button1 .btn-pink:hover::before {
+    transform: scaleX(1);
+}
+.button1 .btn-pink:hover {
+    border: solid 3px var(--bgOrange);
+    color: black;
+}

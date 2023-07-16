@@ -361,15 +361,16 @@ hr {
 
 /* ##################################################### Contact us ##################################################### */
 
-.container {
+.container1 {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 8%;
 }
-.container .row1 {
+.container1 .row1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
