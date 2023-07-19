@@ -73,6 +73,8 @@ li {
 }
 
 .nav-logo {
+    height: 65.84px;
+    width: 247px;
     font-size: 2.1rem;
     font-weight: 500;
     color: #b5abf9;
@@ -146,4 +148,65 @@ a {
 .button1 .btn-pink:hover {
     border: solid 3px var(--bgOrange);
     color: black;
+}
+@media (max-width: 1150px) {
+    nav .button1 {
+        display: none;
+    }
+    .navbar {
+        padding-bottom: 0;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 2;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-logo img {
+        width: 40%;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .text-section {
+        width: 50%;
+    }
+    .image-section {
+        justify-content: right;
+        width: 50%;
+    }
+    .image-section img {
+        width: 100%;
+    }
+    .text-section {
+        padding-left: 10%;
+    }
 }
